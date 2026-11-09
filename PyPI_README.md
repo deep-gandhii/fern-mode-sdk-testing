@@ -1,10 +1,10 @@
-# Fern Python SDK 0.0.1<a id="fern-python-sdk-001"></a>
+# Fern Python SDK 0.0.2<a id="fern-python-sdk-002"></a>
 
 Welcome to the Fern SDK documentation. This guide will help you get started with integrating and using the Fern SDK in your project.
 
 ## Versions<a id="versions"></a>
 
-- SDK version: `0.0.1`
+- SDK version: `0.0.2`
 
 ## About the API<a id="about-the-api"></a>
 

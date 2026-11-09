@@ -46,14 +46,14 @@ class Serializer:
         self.errors: dict[int, ApiError] = {}
         self.config: Optional["SdkConfig"] = config
 
-        self.headers["User-Agent"] = "fern/0.0.1"
+        self.headers["User-Agent"] = "fern/0.0.2"
         self.headers["X-Fern-Language"] = "Python"
         self.headers["X-Fern-Runtime"] = f"python/{platform.python_version()}"
         self.headers["X-Fern-Platform"] = (
             f"{platform.system().lower()}/{platform.release()}"
         )
         self.headers["X-Fern-SDK-Name"] = "fern"
-        self.headers["X-Fern-SDK-Version"] = "0.0.1"
+        self.headers["X-Fern-SDK-Version"] = "0.0.2"
 
         # Apply default headers, FIRST contributor of a header name winning (FSDK-1671).
         #

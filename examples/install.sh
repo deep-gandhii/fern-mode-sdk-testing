@@ -13,4 +13,4 @@ $PYTHON_CMD -m venv .venv
 . .venv/bin/activate
 $PYTHON_CMD -m pip install build
 $PYTHON_CMD -m build --outdir dist ../
-$PYTHON_CMD -m pip install dist/fern-0.0.1-py3-none-any.whl --force-reinstall
+$PYTHON_CMD -m pip install dist/fern-0.0.2-py3-none-any.whl --force-reinstall

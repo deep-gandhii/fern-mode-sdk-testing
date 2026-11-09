@@ -1,4 +1,3 @@
-# SDK-2817-CONTROL-EDIT: NOT in .fernignore, regeneration must overwrite this
 import warnings
 import requests
 import logging
