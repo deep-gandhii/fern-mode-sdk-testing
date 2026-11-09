@@ -1,0 +1,19 @@
+from .body_set_rules_on_the_pronunciation_dictionary_v_1_pronunciation_dictionaries_pronunciation_dictionary_id_set_rules_1 import (
+    BodySetRulesOnThePronunciationDictionaryV1PronunciationDictionariesPronunciationDictionaryIdSetRules1,
+    BodySetRulesOnThePronunciationDictionaryV1PronunciationDictionariesPronunciationDictionaryIdSetRules1_Alias,
+    BodySetRulesOnThePronunciationDictionaryV1PronunciationDictionariesPronunciationDictionaryIdSetRules1_Phoneme,
+)
+from .pronunciation_dictionary_rule import (
+    PronunciationDictionaryRule,
+    PronunciationDictionaryRule_Alias,
+    PronunciationDictionaryRule_Phoneme,
+)
+
+__all__ = [
+    "BodySetRulesOnThePronunciationDictionaryV1PronunciationDictionariesPronunciationDictionaryIdSetRules1",
+    "BodySetRulesOnThePronunciationDictionaryV1PronunciationDictionariesPronunciationDictionaryIdSetRules1_Alias",
+    "BodySetRulesOnThePronunciationDictionaryV1PronunciationDictionariesPronunciationDictionaryIdSetRules1_Phoneme",
+    "PronunciationDictionaryRule",
+    "PronunciationDictionaryRule_Alias",
+    "PronunciationDictionaryRule_Phoneme",
+]

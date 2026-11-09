@@ -1,0 +1,5 @@
+from .body_share_workspace_resource_v_1_workspace_resources_resource_id_share_post_role import (
+    BodyShareWorkspaceResourceV1WorkspaceResourcesResourceIdSharePostRole,
+)
+
+__all__ = ["BodyShareWorkspaceResourceV1WorkspaceResourcesResourceIdSharePostRole"]

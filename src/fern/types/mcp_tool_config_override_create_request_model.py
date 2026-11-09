@@ -1,0 +1,157 @@
+from __future__ import annotations
+import typing
+from typing import Union
+from typing import List
+from pydantic import Field
+from typing import Optional
+from typing import Any
+from typing import Annotated
+from pydantic import TypeAdapter
+from typing import Dict
+from .utils.base_model import BaseModel
+from .pre_tool_speech_mode import PreToolSpeechMode
+from .tool_interruption_mode import ToolInterruptionMode
+from .tool_call_sound_behavior import ToolCallSoundBehavior
+from .tool_execution_mode import ToolExecutionMode
+from .dynamic_variable_assignment import DynamicVariableAssignment
+from .tool_response_mock_config_input import ToolResponseMockConfigInput
+from .tool_call_sound_type import ToolCallSoundType
+from .constant_schema_override import ConstantSchemaOverride
+from .dynamic_variable_schema_override import DynamicVariableSchemaOverride
+from .llm_schema_override import LlmSchemaOverride
+from .omit_schema_override import OmitSchemaOverride
+
+ToolCallSound23 = typing.Union[typing.Literal["off"], typing.Any]
+
+
+# Union type for McpToolConfigOverrideCreateRequestModelToolCallSound
+# Pydantic will attempt to validate against each type in order
+McpToolConfigOverrideCreateRequestModelToolCallSound = Union[str, str]
+# TypeAdapter for runtime validation of McpToolConfigOverrideCreateRequestModelToolCallSound
+# This allows validation of Union types which are not directly instantiable
+from pydantic import TypeAdapter
+
+McpToolConfigOverrideCreateRequestModelToolCallSound_adapter = TypeAdapter(
+    McpToolConfigOverrideCreateRequestModelToolCallSound
+)
+
+
+# fernMode variant type for a shared-component member of McpToolConfigOverrideCreateRequestModelInputOverridesValue
+class McpToolConfigOverrideCreateRequestModelInputOverridesValue_Constant(
+    ConstantSchemaOverride
+):
+    pass
+
+
+# fernMode variant type for a shared-component member of McpToolConfigOverrideCreateRequestModelInputOverridesValue
+class McpToolConfigOverrideCreateRequestModelInputOverridesValue_DynamicVariable(
+    DynamicVariableSchemaOverride
+):
+    pass
+
+
+# fernMode variant type for a shared-component member of McpToolConfigOverrideCreateRequestModelInputOverridesValue
+class McpToolConfigOverrideCreateRequestModelInputOverridesValue_Llm(LlmSchemaOverride):
+    pass
+
+
+# fernMode variant type for a shared-component member of McpToolConfigOverrideCreateRequestModelInputOverridesValue
+class McpToolConfigOverrideCreateRequestModelInputOverridesValue_Omit(
+    OmitSchemaOverride
+):
+    pass
+
+
+# Union type for McpToolConfigOverrideCreateRequestModelInputOverridesValue
+# Pydantic will attempt to validate against each type in order
+McpToolConfigOverrideCreateRequestModelInputOverridesValue = Union[
+    ConstantSchemaOverride,
+    DynamicVariableSchemaOverride,
+    LlmSchemaOverride,
+    OmitSchemaOverride,
+]
+# TypeAdapter for runtime validation of McpToolConfigOverrideCreateRequestModelInputOverridesValue
+# This allows validation of Union types which are not directly instantiable
+from pydantic import TypeAdapter
+
+McpToolConfigOverrideCreateRequestModelInputOverridesValue_adapter = TypeAdapter(
+    McpToolConfigOverrideCreateRequestModelInputOverridesValue
+)
+
+
+class McpToolConfigOverrideCreateRequestModel(BaseModel):
+    """McpToolConfigOverrideCreateRequestModel
+
+    :param force_pre_tool_speech: DEPRECATED: use `pre_tool_speech` instead. If set, overrides the server's force_pre_tool_speech setting for this tool., defaults to None
+    :type force_pre_tool_speech: bool, optional
+    :param pre_tool_speech: If set, overrides the server's pre_tool_speech setting for this tool., defaults to None
+    :type pre_tool_speech: PreToolSpeechMode, optional
+    :param disable_interruptions: DEPRECATED: use `interruption_mode` instead. If set, overrides the server's disable_interruptions setting for this tool., defaults to None
+    :type disable_interruptions: bool, optional
+    :param interruption_mode: If set, overrides the server's interruption_mode setting for this tool., defaults to None
+    :type interruption_mode: ToolInterruptionMode, optional
+    :param tool_call_sound: Overrides the server's tool_call_sound setting for this tool. A sound name plays that sound; 'off' overrides to no sound (silence); null means do not override (inherit the server default)., defaults to None
+    :type tool_call_sound: McpToolConfigOverrideCreateRequestModelToolCallSound, optional
+    :param tool_call_sound_behavior: If set, overrides the server's tool_call_sound_behavior setting for this tool, defaults to None
+    :type tool_call_sound_behavior: ToolCallSoundBehavior, optional
+    :param execution_mode: If set, overrides the server's execution_mode setting for this tool, defaults to None
+    :type execution_mode: ToolExecutionMode, optional
+    :param response_timeout_secs: If set, overrides the server's response timeout for this MCP tool., defaults to None
+    :type response_timeout_secs: int, optional
+    :param assignments: Dynamic variable assignments for this MCP tool, defaults to None
+    :type assignments: List[DynamicVariableAssignment], optional
+    :param input_overrides: Mapping of json path to input override configuration, defaults to None
+    :type input_overrides: Dict[str, McpToolConfigOverrideCreateRequestModelInputOverridesValue], optional
+    :param response_mocks: Mock responses with optional parameter conditions. Evaluated top-to-bottom; first match wins., defaults to None
+    :type response_mocks: List[ToolResponseMockConfigInput], optional
+    :param tool_name: The name of the MCP tool
+    :type tool_name: str
+    """
+
+    force_pre_tool_speech: Optional[bool] = Field(
+        default=None,
+        description="DEPRECATED: use `pre_tool_speech` instead. If set, overrides the server's force_pre_tool_speech setting for this tool.",
+    )
+    pre_tool_speech: Optional[PreToolSpeechMode] = Field(
+        default=None,
+        description="If set, overrides the server's pre_tool_speech setting for this tool.",
+    )
+    disable_interruptions: Optional[bool] = Field(
+        default=None,
+        description="DEPRECATED: use `interruption_mode` instead. If set, overrides the server's disable_interruptions setting for this tool.",
+    )
+    interruption_mode: Optional[ToolInterruptionMode] = Field(
+        default=None,
+        description="If set, overrides the server's interruption_mode setting for this tool.",
+    )
+    tool_call_sound: Optional[McpToolConfigOverrideCreateRequestModelToolCallSound] = (
+        Field(
+            default=None,
+            description="Overrides the server's tool_call_sound setting for this tool. A sound name plays that sound; 'off' overrides to no sound (silence); null means do not override (inherit the server default).",
+        )
+    )
+    tool_call_sound_behavior: Optional[ToolCallSoundBehavior] = Field(
+        default=None,
+        description="If set, overrides the server's tool_call_sound_behavior setting for this tool",
+    )
+    execution_mode: Optional[ToolExecutionMode] = Field(
+        default=None,
+        description="If set, overrides the server's execution_mode setting for this tool",
+    )
+    response_timeout_secs: Optional[int] = Field(
+        default=None,
+        description="If set, overrides the server's response timeout for this MCP tool.",
+    )
+    assignments: Optional[List[DynamicVariableAssignment]] = Field(
+        default=None, description="Dynamic variable assignments for this MCP tool"
+    )
+    input_overrides: Optional[
+        Dict[str, McpToolConfigOverrideCreateRequestModelInputOverridesValue]
+    ] = Field(
+        default=None, description="Mapping of json path to input override configuration"
+    )
+    response_mocks: Optional[List[ToolResponseMockConfigInput]] = Field(
+        default=None,
+        description="Mock responses with optional parameter conditions. Evaluated top-to-bottom; first match wins.",
+    )
+    tool_name: str = Field(description="The name of the MCP tool")
