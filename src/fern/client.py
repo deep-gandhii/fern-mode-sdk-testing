@@ -1,3 +1,4 @@
+# SDK-2817-CUSTOMER-EDIT: hand-written customer change, must survive regeneration (listed in .fernignore)
 from __future__ import annotations
 
 from typing import TYPE_CHECKING

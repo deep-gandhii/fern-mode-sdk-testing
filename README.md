@@ -143,3 +143,5 @@ a proof of concept, but know that we will not be able to merge it as-is. We sugg
 an issue first to discuss with us!
 
 On the other hand, contributions to the README are always very welcome!
+
+<!-- SDK-2817-CUSTOMER-EDIT: customer README note, must survive regeneration -->
