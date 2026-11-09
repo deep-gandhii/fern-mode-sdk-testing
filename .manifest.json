@@ -36,7 +36,7 @@
       "sdkName": "fern",
       "apiName": "api",
       "organizationName": "fern",
-      "sdkVersion": "0.0.1"
+      "sdkVersion": "0.0.2"
     },
     "api": {
       "baseUrl": "",

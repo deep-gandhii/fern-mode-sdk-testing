@@ -3,3 +3,6 @@ src/fern/client.py
 README.md
 src/fern/version.py
 src/fern/custom/**
+.fern/replay.lock
+.fern/replay.yml
+.gitattributes

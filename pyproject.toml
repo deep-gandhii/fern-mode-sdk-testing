@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fern"
-version = "0.0.1"
+version = "0.0.2"
 license = { text = "MIT" }
 description = """This is the documentation for the ElevenLabs API. You can use this API to use our service programmatically, this is done by using your API key. You can find your API key in the dashboard at https://elevenlabs.io/app/settings/api-keys."""
 readme = "PyPI_README.md"
