@@ -1,0 +1,33 @@
+from ....types import (
+    AuthConnectionsUpdateResponse,
+    AuthConnectionsUpdateResponse_Oauth2ClientCredentials,
+    AuthConnectionsUpdateResponse_RefreshTokenAuth,
+    AuthConnectionsUpdateResponse_BasicAuth,
+    AuthConnectionsUpdateResponse_BearerAuth,
+    AuthConnectionsUpdateResponse_Oauth2Jwt,
+    AuthConnectionsUpdateResponse_PrivateKeyJwt,
+    AuthConnectionsUpdateResponse_Mtls,
+    AuthConnectionsUpdateResponse_CustomHeaderAuth,
+    AuthConnectionsUpdateResponse_ApiIntegrationOauth2AuthCode,
+    AuthConnectionsUpdateResponse_ApiIntegrationOauth2CustomApp,
+    AuthConnectionsUpdateResponse_WhatsappAuth,
+    AuthConnectionsUpdateResponse_SlackBotAuth,
+    AuthConnectionsUpdateResponse_UrlSecret,
+)
+
+__all__ = [
+    "AuthConnectionsUpdateResponse",
+    "AuthConnectionsUpdateResponse_Oauth2ClientCredentials",
+    "AuthConnectionsUpdateResponse_RefreshTokenAuth",
+    "AuthConnectionsUpdateResponse_BasicAuth",
+    "AuthConnectionsUpdateResponse_BearerAuth",
+    "AuthConnectionsUpdateResponse_Oauth2Jwt",
+    "AuthConnectionsUpdateResponse_PrivateKeyJwt",
+    "AuthConnectionsUpdateResponse_Mtls",
+    "AuthConnectionsUpdateResponse_CustomHeaderAuth",
+    "AuthConnectionsUpdateResponse_ApiIntegrationOauth2AuthCode",
+    "AuthConnectionsUpdateResponse_ApiIntegrationOauth2CustomApp",
+    "AuthConnectionsUpdateResponse_WhatsappAuth",
+    "AuthConnectionsUpdateResponse_SlackBotAuth",
+    "AuthConnectionsUpdateResponse_UrlSecret",
+]

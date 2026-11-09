@@ -1,0 +1,26 @@
+from __future__ import annotations
+from typing import List
+from pydantic import Field
+from typing import Optional
+from typing import Any
+from typing import Union
+from .utils.base_model import BaseModel
+from .dubbing_project_response import DubbingProjectResponse
+
+
+class DubbingProjectListResponse(BaseModel):
+    """DubbingProjectListResponse
+
+    :param projects: The page of dubbing projects the caller can access.
+    :type projects: List[DubbingProjectResponse]
+    :param next_cursor: Cursor for the next page, or null when there are no more results., defaults to None
+    :type next_cursor: str, optional
+    """
+
+    projects: List[DubbingProjectResponse] = Field(
+        description="The page of dubbing projects the caller can access."
+    )
+    next_cursor: Optional[str] = Field(
+        default=None,
+        description="Cursor for the next page, or null when there are no more results.",
+    )

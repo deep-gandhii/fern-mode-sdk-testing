@@ -1,0 +1,3 @@
+from ...types import BodyComposeMusicWithADetailedResponseV1MusicDetailedPostModelId
+
+__all__ = ["BodyComposeMusicWithADetailedResponseV1MusicDetailedPostModelId"]
